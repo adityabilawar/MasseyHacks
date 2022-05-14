@@ -13,6 +13,7 @@ form.addEventListener('submit', (e) => {
         e.preventDefault();
         errorElement.innerText = messages.join(', ');
 <<<<<<< HEAD
+<<<<<<< HEAD
     } 
 })
 
@@ -53,6 +54,11 @@ form.addEventListener('submit', (e) => {
 //     process.exit();
 //   })().catch((err) => console.log(err.stack));
 
+=======
+    }
+    
+})
+>>>>>>> parent of e0c6977 (login page plus cockroach connection)
 =======
     }
     
