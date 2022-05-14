@@ -10,7 +10,6 @@
     "vite": "^2.0.5"
   },
   "dependencies": {
-    "firebase": "^8.2.10",
-    "pg": "^8.7.3"
+    "firebase": "^8.2.10"
   }
 }
