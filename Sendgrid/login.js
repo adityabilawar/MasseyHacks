@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const name = document.getElementById("name");
 const email = document.getElementById("email");
 const form = document.getElementById("form");
@@ -13,27 +12,9 @@ form.addEventListener('submit', (e) => {
     if (messages.length > 0) {
         e.preventDefault();
         errorElement.innerText = messages.join(', ');
-    }
-    
+    } 
 })
-=======
-const name = document.getElementById("name");
-const email = document.getElementById("email");
-const form = document.getElementById("form");
-const errorElement = document.getElementById("error");
 
-form.addEventListener('submit', (e) => {
-    let messages = [];
-    if (email.value === '' || email.value === null) {
-        messages.push('Email is required');
-    }
-
-    if (messages.length > 0) {
-        e.preventDefault();
-        errorElement.innerText = messages.join(', ');
-    }
-    
-})
 
 
 //code for connecting to CockroachDB
@@ -70,4 +51,3 @@ form.addEventListener('submit', (e) => {
 //     // Exit program
 //     process.exit();
 //   })().catch((err) => console.log(err.stack));
->>>>>>> e0c697743cb869eaafce9e2f8ef72b7d7c9fee9d
