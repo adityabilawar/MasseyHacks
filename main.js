@@ -121,27 +121,29 @@ callButton.onclick = async () => {
 
   hangupButton.disabled = false;
 };
-import { API_KEY } from './config';
+
+//import { API_KEY } from './config';
 // NOTE: Email the call ID to the email address
 emailButton.onclick = async () => {
-  const sgMail = require('@sendgrid/mail')
+  //const sgMail = require('@sendgrid/mail')
   // HIDE THE API KEY OR YOU WILL GET BANNED
-  sgMail.setApiKey(API_KEY)
-  const message = {
-    to: emailInput.value,
+ // sgMail.setApiKey(API_KEY)
+  //const message = {
+  //  to: emailInput.value,
     // ENTER YOUR EMAIL FROM SINGLE SENDER
-    from: '23ab1107@wwprsd.org',
-    subject: 'CookIt Interactive Session Join Code',
-    text: `Your call ID is ${callInput.value}`,
-    html: `<strong>Your call ID is ${callInput.value}</strong>`,
-  }
+  //   from: '23ab1107@wwprsd.org',
+  //   subject: 'CookIt Interactive Session Join Code',
+  //   text: `Your call ID is ${callInput.value}`,
+  //   html: `<strong>Your call ID is ${callInput.value}</strong>`,
+  // }
 
-  sgMail
-    .send(message)
-    .then(response => console.log('Email sent...'))
-    .catch(error => console.log(error.message))
+  // sgMail
+  //   .send(message)
+  //   .then(response => console.log('Email sent...'))
+  //   .catch(error => console.log(error.message))
+  //TwilioSendGridEmailer.sendTwilio(emailInput.value, callInput.value);
 
-};
+}
 
 // 3. Answer the call with the unique ID
 answerButton.onclick = async () => {
