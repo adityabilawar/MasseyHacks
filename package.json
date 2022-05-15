@@ -12,7 +12,6 @@
   "dependencies": {
     "@sendgrid/mail": "^7.6.2",
     "firebase": "^8.2.10",
-    "nodemailer": "^6.7.5",
     "pg": "^8.7.3"
   }
 }
