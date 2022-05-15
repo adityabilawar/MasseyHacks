@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 
 body {
-  font-family: 'Syne Mono', monospace;
+  padding: 0;
+  margin: 0;
+  font-family: 'Source Serif Pro', serif;
+  font-size: larger;
+  background-image: linear-gradient(#c2f570, white);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -9,15 +13,188 @@ body {
   margin: 80px 10px;
 }
 
+.title {
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 2.5em;
+  font-family: Lato,sans-serif;
+}
+
+.title-1 {
+  color: rgb(243, 99, 79);
+}
+
+.title-2 {
+  color: #654321;
+  /* background: -webkit-linear-gradient(orange, rgb(230, 200, 145));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.author {
+  margin-bottom: 3ch;
+}
+
+.quote {
+  font-style: italic;
+}
+
 video {
   width: 40vw;
   height: 30vw;
   margin: 2rem;
-  background: #2c3e50;
+  /* background: #2c3e50; */
+  background: #f2f7fc;
 }
 
 .videos {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url('cutting.png');
+  border-radius: 10ch;
+  background-size: cover;
+}
+
+#webcamVideo {
+  border-style: double;
+  border-color: #654321;
+  border-radius: 1ch;
+  border-width: 1ch;
+  margin-top: 5ch;
+}
+
+#remoteVideo {
+  border-style: double;
+  border-color: #654321;
+  border-radius: 1ch;
+  border-width: 1ch;
+  margin-top: 5ch;
+}
+
+#webcamButton {
+  background-color: #79eb7c;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 5px 6px #888888;
+
+}
+
+#callButton {
+  background-color: #79eb7c;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 5px 6px #888888;
+}
+
+#callInput {
+  border: none;
+  color: grey;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 5px 6px #888888;
+}
+
+#answerButton {
+  border: none;
+  color:white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background: #2c3e50;
+  box-shadow: 5px 6px #888888;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+nav > div {
+  margin: 0 2rem;
+}
+
+#emailInput {
+  border: none;
+  color: grey;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 5px 6px #888888;
+}
+
+#emailButton {
+  border: none;
+  color:white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background: #2c3e50;
+  box-shadow: 5px 6px #888888;
+}
+
+#hangupButton {
+  border: none;
+  color:white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background: #e6491a;
+  box-shadow: 5px 6px #888888;
+}
+
+.file_multi_video {
+  border: none;
+  color:white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background: #2c3e50;
+  box-shadow: 5px 6px #888888;
+}
+
+#video-button {
+  width: 50vw;
 }

@@ -5,33 +5,60 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cook Interactively</title>
+    <script defer src="main.js"></script>
   </head>
   <body>
-    <h2>1. Start your Webcam</h2>
+
+    <h1 class="title"> <div class="title-1">Cook</div><div class="title-2">it</div></h1>
+    <p class="quote">"Providing for our customers to build of kit of recipes for university students. Connect with others to learn, cook, and exchange knowledge for the sustainability during university. Many students become obese and are forced to eat unhealthy foods without having any experience in cooking. We can change that."</p>
+    <p class="author">- Aditya & Derek (Creators of Cookit)</p>
+
+    <h2>Watch a Video Together!</h2>
+    <div id="video_player">
+      <div id="video-1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <video width="400" controls>
+      <source src="mov_bbb.mp4" id="video_here">
+        Your browser does not support HTML5 video.
+    </video>
+    </div>
+    <input id="video-button" type="file" name="file[]" class="file_multi_video" accept="video/*">
+    </div>
+
     <div class="videos">
       <span>
-        <h3>Local Stream</h3>
         <video id="webcamVideo" autoplay playsinline></video>
+        <h3>You</h3>
       </span>
       <span>
-        <h3>Remote Stream</h3>
         <video id="remoteVideo" autoplay playsinline></video>
+        <h3>Other Student</h3>
       </span>
 
 
     </div>
 
-    <button id="webcamButton">Start webcam</button>
-    <h2>2. Create a new Call</h2>
-    <button id="callButton" disabled>Create Call (offer)</button>
-
-    <h2>3. Join a Call</h2>
-    <p>Answer the call from a different browser window or device</p>
+    <button id="webcamButton">Start Webcam</button>
+    <nav>
+      <div>
+        <h2>Create Call ID</h2>
+        <button id="callButton" disabled>Create Call ID:</button>
+      </div>
+      <div>
+      <h2>Join Call Using ID</h2>
     
-    <input id="callInput" />
-    <button id="answerButton" disabled>Answer</button>
+      <input id="callInput" placeholder="Join Call..."/>
+      <button id="answerButton" disabled>Answer</button>
+      </div>
+    </nav>
 
-    <h2>4. Hangup</h2>
+    <h2>Email Code to Friend</h2>
+    <p>An email will automatically be sent to this email address with the call id</p>
+    
+    <input id="emailInput" placeholder="Enter Email..."/>
+    <button id="emailButton" disabled>Send</button>
+
+    <h2>Leave Call</h2>
 
     <button id="hangupButton" disabled>Hangup</button>
 
